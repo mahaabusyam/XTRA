@@ -316,7 +316,7 @@ const products = [
         name: 'Discover 2 Step-Thru',
         brand: 'Premium Sets',
         price: '$768',
-        image: '/images/bicycle.png',
+        image: 'images/bicycle.png',
         weight: '19 lbs',
         year: '2024'
     },
@@ -324,7 +324,7 @@ const products = [
         name: 'Folding Electric Bike',
         brand: 'Exclusive',
         price: '$1,270',
-        image: '/images/bicycle3.png',
+        image: 'images/bicycle3.png',
         weight: '24 lbs',
         year: '2026'
     },
@@ -332,7 +332,7 @@ const products = [
         name: 'High Timber 24in',
         brand: 'Cannondale',
         price: '$790',
-        image: '/images/bicycle4.png',
+        image: 'images/bicycle4.png',
         weight: '20 lbs',
         year: '2024'
     },
@@ -340,7 +340,7 @@ const products = [
         name: 'Hybrid Electric Bike',
         brand: 'Bianchi',
         price: '$999',
-        image: '/images/bicycle2.png',
+        image: 'images/bicycle2.png',
         weight: '22 lbs',
         year: '2023'
     },
@@ -348,7 +348,7 @@ const products = [
         name: 'Parkwood Electric Bike',
         brand: 'Cannondale',
         price: '$980',
-        image: '/images/bicycle4.png',
+        image: 'images/bicycle4.png',
         weight: '20 lbs',
         year: '2025'
     },
@@ -356,7 +356,7 @@ const products = [
         name: 'Pro Bike Vortex',
         brand: 'Cannondale',
         price: '$768',
-        image: '/images/bicycle5.png',
+        image: 'images/bicycle5.png',
         weight: '19 lbs',
         year: '2024'
     }
@@ -471,37 +471,37 @@ const postsData = [
         id: 1,
         title: "Top 7 Must have Accessories for Every Cyclist",
         category: "Tutorial",
-        image: "/images/new1.jpg",
+        image: "images/new1.jpg",
     },
     {
         id: 2,
         title: "How to Choose the Perfect Bike for Your Lifestyle",
         category: "Interview",
-        image: "/images/new2.jpg"
+        image: "images/new2.jpg"
     },
     {
         id: 3,
         title: "5 Local Cycling Trails You Shouldn't Miss",
         category: "Uncategorized",
-        image: "/images/new3.jpg"
+        image: "images/new3.jpg"
     },
     {
         id: 4,
         title: "Electric Bikes Explained: Are They Worth It?",
         category: "News",
-        image: "/images/new4.jpg"
+        image: "images/new4.jpg"
     },
     {
         id: 5,
         title: "How to Safely Commute to Work by Bicycle",
         category: "Interview" ,
-        image: "/images/post5-1.jpg"
+        image: "images/post5-1.jpg"
     },
     {
         id: 6,
         title: "Top 10 Reasons to Start Cycling Today",
         category: "News",
-        image: "/images/post-6.jpg"
+        image: "images/post-6.jpg"
     }
 ];
 function openPost(postId) {
