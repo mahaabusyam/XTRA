@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - Bike Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="top-announcement-bar">
+<div class="container-bar">
+  <div class="envato-logo">
+    <span class="leaf"><i class="fa-solid fa-leaf leaf-icon"></i></span> envato<span>market</span>
+  </div>
+  
+  <div class="promo-text">
+    Limited time offer, Buy XTRA WordPress theme only <span>$29</span>
+  </div>
+  
+  <div class="action-btn">
+    <a href="#" class="btn-green">Download XTRA Theme</a>
+  </div>
+</div>
+</div>
+
+
+<nav class="navbar">
+  
+  <div class="logo">
+    <i class="fas fa-bicycle"></i>
+    <span class="brand-name">XTRA</span>
+  </div>
+  
+  <ul class="nav-links">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li class="dropdown-container">
+      <a href="about.html">About <i class="fas fa-chevron-down arrow-s"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1</a></li>
+        <li><a href="#">Dropdown menu</a></li>
+        <li><a href="#">Submenu 2</a></li>
+      </ul>
+    </li>
+    <li class="dropdown-container">
+      <a href="#" class="dots">...</a>
+      <ul class="dropdown-menu">
+        <li><a href="services.html">Services</a></li>
+         <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+  
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="nav-actions">
+    <button class="help-btn">
+      <i class="fas fa-bicycle"></i> Help & Service
+    </button>
+    <div class="icon-wrapper">
+      <i class="far fa-heart" onclick="openWishlist()"></i>
+      <span class="badge">0</span>
+    </div>
+    <div class="icon-wrapper">
+      <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+      <span class="badge">0</span>
+      <div class="cart-dropdown" id="cartDropdown">
+  <div class="cart-content" id="cartContent">
+    <i class="fas fa-shopping-cart empty-icon"></i>
+    <p>Your cart is empty — start shopping</p>
+  </div>
+  <div id="cartFooter" style="display:none;"></div>
+</div>
+    </div>
+  </div>
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<div class="side-menu" id="sideMenu">
+  <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div>
+  <div class="menu-content">
+    <ul class="mobile-nav-links">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="has-children" id="mobileAbout">
+        <a href="about.html">
+          About <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <ul class="mobile-submenu">
+          <li><a href="#">Submenu 1</a></li>
+          <li class="has-inner-children">
+            <a href="javascript:void(0)">
+              Dropdown menu <i class="fas fa-chevron-down arrow-s"></i>
+            </a>
+          </li>
+          <li><a href="#">Submenu 2</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="services.html">Services</a></li>
+       <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="buy-xtra"><a href="#">Buy XTRA Theme</a></li>
+            
+    </ul>
+    <div class="menu-footer">
+      <div class="social-icons">
+        <a href="#" data-title="Facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" data-title="Twitter" class="twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" data-title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© Copyright 2026</p>
+    </div>
+    
+  </div>
+</div>
+<div class="top-sec center">
+  <i class="fas fa-house"></i>
+  <i class="fas fa-bicycle i2"></i>
+  <p>Services</p>
+</div>
+<section class="services-section">
+    <div class="container">
+        <h2 >Our Popular <span class="highlight">Bike Services</span></h2>
+        <p>
+            At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak condition
+        </p>
+
+        <div>
+            
+            <div class="service-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-bicycle"></i> </div>
+                <h3 class="card-title">Tune-Up Packages</h3>
+                <p class="card-text">Want a bike that fits your style and performance goals? We offer custom builds using high-quality components</p>
+            </div>
+
+            <div class="service-card"
+            style="background: #2c2c2c;"
+            >
+                <div class="icon-box">
+                    <i class="fa-solid fa-helmet-safety"></i> </div>
+                <h3 class="card-title">Checks & Setup</h3>
+                <p class="card-text">Want a bike that fits your style and performance goals? We offer custom builds using high-quality components</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-gears"></i> </div>
+                <h3 class="card-title">Chain Cleaning</h3>
+                <p class="card-text">Want a bike that fits your style and performance goals? We offer custom builds using high-quality components</p>
+            </div>
+
+        </div>
+
+        <button class="btn-order mt-5">
+            Order your Services <span class="ms-2">&rarr;</span>
+        </button>
+    </div>
+</section>
+<section class="connect-section">
+    <div class="custom-container">
+        
+        <div class="content-side">
+            <h2 class="title">Ride. Learn. <span class="highlight">Connect.</span></h2>
+            <p class="description">At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak condition</p>
+            
+ <ul class="features-list">
+   <li><span class="check-icon"></span> Free test rides</li>
+   <li><span class="check-icon"></span> Expert repairs</li>
+   <li><span class="check-icon"></span> Custom builds</li>
+   <li><span class="check-icon"></span> Gear upgrades</li>
+   <li><span class="check-icon"></span> Electric bikes</li>
+   <li><span class="check-icon"></span> Free Shipping</li>
+ </ul>            
+
+            <div class="action-area">
+                <a href="#" class="btn">See full details</a>
+                <span class="tagline">Bike have different colors</span>
+            </div>
+        </div>
+
+        <div class="gallery-side">
+            <div class="grid-layout">
+                <div class="img-box box-1"><img src="/images/bike-gal2.jpg" alt="1"></div>
+                <div class="img-box box-2"><img src="/images/bike-gal.jpg" alt="2"></div>
+                <div class="img-box box-3"><img src="/images/PV_02.jpg" alt="3"></div>
+                <div class="img-box box-4"><img src="/images/card1.jpg" alt="4"></div>
+                <div class="img-box box-5"><img src="/images/new1.jpg" alt="5"></div>
+                <div class="img-box box-6"><img src="/images/new2.jpg" alt="6"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="faq-section-s">
+    <div class="container">
+        <div class="faq-header">
+            <h2>Pre Services <span class="highlight">Common Questions</span>
+            <div class="bg-text">
+  <div class="track">
+    <span>MEET OUR BESTSELLER MEET OUR BESTSELLER MEET OUR BESTSELLER MEET OUR BESTSELLER </span>
+    <span>MEET OUR BESTSELLER MEET OUR BESTSELLER MEET OUR BESTSELLER MEET OUR BESTSELLER </span>
+  </div>
+</div></h2>
+            <p>At Velocity Cycles, we take pride in delivering top notch services to keep your bike in peak condition</p>
+        </div>
+
+        <div class="faq-content">
+            <div class="faq-image">
+                <img src="/images/service-faq-2.jpg" alt="Cyclist on mountain">
+            </div>
+
+           <div class="faq-accordion">
+    <div class="faq-item active">
+        <button class="faq-question">
+            What types of bikes do you sell?
+            <span class="icon-faq"></span>
+        </button>
+        <div class="faq-answer">
+            <hr />
+            <p>We offer a wide range of bikes including road bikes, mountain bikes, hybrid bikes, electric bikes, and kids' bikes.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Do you provide bike repair services?
+            <span class="icon-faq"></span>
+        </button>
+        <div class="faq-answer">
+            <hr />
+            <p>We offer a wide range of bikes including road bikes, mountain bikes, hybrid bikes, electric bikes, and kids' bikes.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            How long does a standard tune-up take?
+            <span class="icon-faq"></span>
+        </button>
+        <div class="faq-answer">
+            <hr />
+            <p>We offer a wide range of bikes including road bikes, mountain bikes, hybrid bikes, electric bikes, and kids' bikes.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Can I book a service appointment online?
+            <span class="icon-faq"></span>
+        </button>
+        <div class="faq-answer">
+            <hr />
+            <p>We offer a wide range of bikes including road bikes, mountain bikes, hybrid bikes, electric bikes, and kids' bikes.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            What brands of bikes do you carry?
+            <span class="icon-faq"></span>
+        </button>
+        <div class="faq-answer">
+            <hr />
+            <p>We offer a wide range of bikes including road bikes, mountain bikes, hybrid bikes, electric bikes, and kids' bikes.</p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="cta-banner">
+  <h2>It's a great day for a ride.</h2>
+  <p>A bicycle, also called a pedal cycle , bike or cycle, is a human powered</p>
+  <button class="cta-button"><span>Explore Products</span>
+    <span class="arrow">&rarr;</span></button>
+</div>
+<section class="bike-footer-section">
+  <div class="contact-info-card">
+    <div class="info-item">
+      <h4>Pre-sale Questions</h4>
+      <p>help@xtrabicycle.com</p>
+    </div>
+    <div class="divider"></div>
+    <div class="info-item">
+      <h4>Call Us</h4>
+      <p>+1 800 2345 6789</p>
+    </div>
+    <div class="divider"></div>
+    <div class="info-item">
+      <h4>Our Location</h4>
+      <p>#2354, Beverly Hills, LA</p>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-col">
+      <h3>Office</h3>
+      <div class="orange-line"></div>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> <span>121 King Street, NewYork</span></li>
+        <li><i class="fas fa-phone-alt"></i> <span>+1 (800) 333 44 55</span></li>
+        <li><i class="fas fa-envelope"></i> <span>xtrabike@gmail.com</span></li>
+        <li><i class="fas fa-fax"></i> <span>+1 (800) 333 99 88</span></li>
+        <li><i class="fab fa-x-twitter"></i> <span>@xta_bikeshop</span></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3>News</h3>
+      <div class="orange-line"></div>
+      <div class="news-item">
+        <div class="over-img">
+          <img src="/images/new1.jpg" alt="news">
+          <div class="overlay-icon">
+            <i class="fas fa-link"></i>
+          </div>
+        </div>
+        <div class="news-text">
+          <p>Top 7 Must have Accessories for Everyone...</p>
+          <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 24</small>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="over-img">
+          <img src="/images/new2.jpg" alt="news">
+          <div class="overlay-icon">
+            <i class="fas fa-link"></i>
+          </div>
+        </div>
+        <div class="news-text">
+          <p>How to Choose the Perfect Bike for Your...</p>
+          <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 18</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Shortcuts</h3>
+      <div class="orange-line"></div>
+      <div class="shortcuts-grid">
+        <ul>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> City Store</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> News</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Clients</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Consultation</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Maps</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Employees</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Teams</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Benefits</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Working Hours</h3>
+      <div class="orange-line"></div>
+      <p class="support-text">Our support available to help you 24 hours a day, seven days a week.</p>
+      <ul class="hours-list">
+        <li><span>Monday to Friday</span> <strong>8AM - 4PM</strong></li>
+        <li><span>Saturday</span> <strong>8AM - 1PM</strong></li>
+        <li><span>Sunday</span> <strong>Closed</strong></li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+<footer class="footer2">
+  <p>Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+  <div class="icons-container">
+    <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+    <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+    <img src="https://img.icons8.com/color/48/amex.png" alt="American Express">
+    <img src="https://img.icons8.com/color/48/bitcoin.png" alt="Bitcoin">
+    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+  </div>
+</footer>
+<div class="floating-buttons">
+  <button class="btn2 up-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <button class="btn2 msg-btn">
+    <i class="fas fa-envelope"></i>
+  </button>
+</div>
+<div class="bottom-nav">
+  <a href="#" class="nav-item">
+    <div class="icon"><i class="fas fa-house"></i></div>
+    <span>Home</span>
+  </a>
+  
+  <a href="#" class="nav-item">
+    <div class="icon"><i class="fas fa-shop"></i></div>
+    <span>Shop</span>
+  </a>
+  
+  <a href="#" class="nav-item">
+    <div class="icon"><i class="fas fa-phone"></i></div>
+    <span>Call Us</span>
+  </a>
+  
+  <a href="#" class="nav-item">
+    <div class="icon"><i class="fas fa-envelope"></i></div>
+    <span>Contact</span>
+  </a>
+</div>
+
+
+
+
+<script src="/js/main.js"></script>
+</body>
+
+</html>

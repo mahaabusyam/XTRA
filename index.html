@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike Shop</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="top-announcement-bar">
+    <div class="container-bar">
+        <div class="envato-logo">
+            <span class="leaf"><i class="fa-solid fa-leaf leaf-icon"></i></span> envato<span>market</span>
+        </div>
+
+        <div class="promo-text">
+            Limited time offer, Buy XTRA WordPress theme only <span>$29</span>
+        </div>
+
+        <div class="action-btn">
+            <a href="#" class="btn-green">Download XTRA Theme</a>
+        </div>
+    </div>
+</div>
+
+  
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fas fa-bicycle"></i>
+            <span class="brand-name">XTRA</span>
+        </div>
+
+        <ul class="nav-links">
+            <li class="active"><a href="/index.html">Home</a></li>
+            <li class="dropdown-container">
+                <a href="/about.html">About <i class="fas fa-chevron-down arrow-s"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Dropdown menu</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-container">
+                <a href="#" class="dots">...</a>
+                <ul class="dropdown-menu">
+                    <li><a href="services.html">Services</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="help-btn">
+                <i class="fas fa-bicycle"></i> Help & Service
+            </button>
+            <div class="icon-wrapper">
+                <i class="far fa-heart" onclick="openWishlist()"></i>
+                <span class="badge">0</span>
+            </div>
+            <div class="icon-wrapper">
+                <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+                <span class="badge">0</span>
+               <div class="cart-dropdown" id="cartDropdown">
+    <div class="cart-content" id="cartContent">
+        <i class="fas fa-shopping-cart empty-icon"></i>
+        <p>Your cart is empty — start shopping</p>
+    </div>
+    <div id="cartFooter" style="display:none;"></div>
+</div>
+            </div>
+        </div>
+         <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div>
+        <div class="menu-content">
+            <ul class="mobile-nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="has-children" id="mobileAbout">
+    <a href="about.html">
+        About <i class="fas fa-chevron-down arrow"></i>
+    </a>
+    <ul class="mobile-submenu">
+        <li><a href="#">Submenu 1</a></li>
+        <li class="has-inner-children">
+            <a href="javascript:void(0)">
+                Dropdown menu <i class="fas fa-chevron-down arrow-s"></i>
+            </a>
+        </li>
+        <li><a href="#">Submenu 2</a></li>
+    </ul>
+</li>
+
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="buy-xtra"><a href="#">Buy XTRA Theme</a></li>
+            </ul>
+            <div class="menu-footer">
+    <div class="social-icons">
+        <a href="#" data-title="Facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" data-title="Twitter" class="twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" data-title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© Copyright 2026</p>
+</div>
+
+        </div>
+    </div>
+    <section class="hero">
+    <div class="content">
+        <h1>XTRA Bicycle is not just a <span>Regular Bicycle</span></h1>
+        <p>A bicycle, also called a pedal cycle, bike or cycle, is a human-powered or motor-powered assisted.</p>
+        <div class="price">$ 1749</div>
+        <a href="#" class="btn">See full details</a>
+        <span>Bike have different colors</span>
+    </div>
+
+    <div class="image-wrapper">
+        <div class="bike-container">
+    <img src="/images/bicycle.png" alt="XTRA Bicycle" class="bike-img">
+    
+    <div class="hotspot seat-box">
+        <div class="label"><div class="dot"></div>Comfortable Seat</div>
+    </div>
+    
+    <div class="hotspot wheel-box">
+        <div class="label"><div class="dot"></div>High-Quality Wheels</div>
+    </div>
+</div>
+    
+    <div class="mountain-wrapper">
+        <img src="/images/mountain.jpg" alt="Mountain">
+        <div class="overlay"></div>
+    </div>
+    
+</div>
+</section>
+<section class="bicycle-section">
+        <div class="text-content">
+            <h1>XTRA Bicycle — It's Not Just a Bike, <span class="highlight">It's a Revolution</span></h1>
+            <p>A bicycle, also called a pedal cycle, bike or cycle, is a human powered or motor-powered assisted, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.</p>
+            
+            <ul class="features-list">
+    <li><span class="check-icon"></span> Free test rides</li>
+    <li><span class="check-icon"></span> Expert repairs</li>
+    <li><span class="check-icon"></span> Custom builds</li>
+    <li><span class="check-icon"></span> Gear upgrades</li>
+    <li><span class="check-icon"></span> Electric bikes</li>
+    <li><span class="check-icon"></span> Free Shipping</li>
+</ul>
+        </div>
+
+
+        <div class="image-container">
+            <img src="/images/bicycle2.png" alt="Bicycle" id="moving-bike">
+        </div>
+
+    <div class="cta-banner">
+        <h2>It's a great day for a ride.</h2>
+        <p>A bicycle, also called a pedal cycle , bike or cycle, is a human powered</p>
+        <button class="cta-button"><span>Explore Products</span>
+<span class="arrow">&rarr;</span></button>
+    </div>
+</section>
+<section class="bestseller-section">
+    <h2 class="title">Meet Our <span class="highlight"> Bestseller</span>
+    <div class="bg-text">
+    <div class="track">
+        <span>Meet Our Bestseller Meet Our Bestseller Meet Our Bestseller Meet Our Bestseller</span>
+        <span>Meet Our Bestseller Meet Our Bestseller Meet Our Bestseller Meet Our Bestseller</span>
+    </div>
+</div></h2>
+     <div class="products-grid-main">
+     <div class="product-card featured" onclick="openProduct(0)" >
+         <div class="badges">
+             <span class="badge2 sale-badge">Sale!</span>
+             <span class="badge2 percent-badge">22%</span>
+         </div>
+         <div class="image-box">
+             <img src="/images/bicycle.png" alt="Discover 2">
+             <div class="overlay-img">
+                 <div>
+                 <i class="fa-regular fa-heart"></i>
+                 <i class="fas fa-random"></i>
+                 <i class="fas fa-search"></i>
+                 </div>
+             </div>
+             <div class="hot-sale-bar">
+                 <span>
+                 <i class="fas fa-bolt" style="color: gold;"></i>HOT SALE : 22% OFF
+                 <i class="fas fa-bolt" style="color: gold;"></i>HOT SALE : 22% OFF
+                 <i class="fas fa-bolt" style="color: gold;"></i>HOT SALE : 22% OFF
+                 </span>
+             </div>
+         </div>
+         <div class="product-info">
+             <h3>Discover 2 <br />Step-Thru</h3>
+             <p class="brand">Premium Sets</p>
+             <div class="price-container">
+                 <div class="prices">
+                     <span class="old-price">$900</span>
+                     <span class="new-price t">$768</span>
+                 </div>
+                 <button class="cart-btn"> <i class="fas fa-shopping-cart"></i>add to cart
+                 <div class="overlay2"></div>
+                 </button>
+             </div>
+         </div>
+     </div>
+     
+     <div class="product-card" onclick="openProduct(1)">
+         <div class="image-box">
+             <img src="/images/bicycle3.png" alt="Folding Bike">
+              <div class="overlay-img">
+     <div>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fas fa-random"></i>
+         <i class="fas fa-search"></i>
+     </div>
+ </div>
+         </div>
+         <div class="product-info">
+             <h3>Folding <br /> Electric Bike</h3>
+             <p class="brand">Exclusive</p>
+             <div class="price-container">
+                 <div class="prices">
+                     <span class="new-price">$1,270</span>
+                 </div>
+                 <button class="cart-btn"><i class="fas fa-shopping-cart"></i>add to cart
+                 <div class="overlay2"></div>
+                 </button>
+             </div>
+         </div>
+     </div>
+     
+     <div class="product-card" onclick="openProduct(2)">
+         <div class="image-box">
+             <img src="/images/bicycle4.png" alt="Parkwood">
+              <div class="overlay-img">
+     <div>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fas fa-random"></i>
+         <i class="fas fa-search"></i>
+     </div>
+ </div>
+         </div>
+         <div class="product-info">
+             <h3>High Timber <br />24in</h3>
+             <p class="brand">Cannondale</p>
+             <div class="price-container">
+                 <div class="prices">
+                     <span class="new-price">$790</span>
+                 </div>
+                 <button class="cart-btn"><i class="fas fa-shopping-cart"></i>add to cart
+                 <div class="overlay2"></div>
+                 </button>
+             </div>
+         </div>
+     </div>
+      <div class="product-card" onclick="openProduct(3)">
+     <div class="image-box">
+         <img src="/images/bicycle2.png" alt="Parkwood">
+          <div class="overlay-img">
+     <div>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fas fa-random"></i>
+         <i class="fas fa-search"></i>
+     </div>
+ </div>
+     </div>
+     <div class="product-info">
+         <h3>Hybrid <br> Electric Bike</h3>
+         <p class="brand">Bianchi</p>
+         <div class="price-container">
+             <div class="prices">
+                 <span class="new-price">$999</span>
+             </div>
+             <button class="cart-btn"><i class="fas fa-shopping-cart"></i>add to cart
+             <div class="overlay2"></div>
+             </button>
+         </div>
+     </div>
+ </div>
+  <div class="product-card" onclick="openProduct(4)">
+     <div class="image-box">
+         <img src="/images/bicycle4.png" alt="Parkwood">
+          <div class="overlay-img">
+     <div>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fas fa-random"></i>
+         <i class="fas fa-search"></i>
+     </div>
+ </div>
+     </div>
+     <div class="product-info">
+         <h3>Parkwood <br />Electric Bike</h3>
+         <p class="brand">Cannondale</p>
+         <div class="price-container">
+             <div class="prices">
+                 <span class="new-price">$980</span>
+             </div>
+             <button class="cart-btn"><i class="fas fa-shopping-cart"></i>add to cart
+             <div class="overlay2"></div>
+             </button>
+         </div>
+     </div>
+ </div>
+  <div class="product-card" onclick="openProduct(5)">
+     <div class="image-box">
+         <img src="/images/bicycle5.png" alt="Parkwood">
+          <div class="overlay-img">
+     <div>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fas fa-random"></i>
+         <i class="fas fa-search"></i>
+     </div>
+ </div>
+     </div>
+     <div class="product-info">
+         <h3>Pro Bike <br />Vortex</h3>
+         <p class="brand">Cannondale</p>
+         <div class="price-container">
+             <div class="prices">
+                 <span class="new-price">$768</span>
+             </div>
+             <button class="cart-btn"><i class="fas fa-shopping-cart"></i>add to cart
+             <div class="overlay2"></div>
+             </button>
+         </div>
+     </div>
+ </div>
+ </div>
+ 
+ <div class="view-all-container">
+     <button class="view-all-btn">
+         <div class="icon-circle">
+             <i class="fas fa-bicycle"></i>
+         </div>
+         <span class="btn-text">View all products</span>
+     </button>
+ </div>
+</section>
+<section class="bikes-category-section">
+    <div class="category-grid">
+        
+        <div class="category-card">
+            <div class="card-image">
+                <img src="/images/electric1.png" alt="Electric bicycles">
+            </div>
+            <div class="card-footer">
+                <div class="card-text">
+                    <p class="count">+120 bicycles</p>
+                    <h3 class="title2">Electric bicycles</h3>
+                </div>
+                <a href="#" class="arrow-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="card-image">
+                <img src="/images/electric2.png" alt="Children bicycles">
+            </div>
+            <div class="card-footer">
+                <div class="card-text">
+                    <p class="count">+120 bicycles</p>
+                    <h3 class="title2">Children bicycles</h3>
+                </div>
+                <a href="#" class="arrow-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="testimonial-section">
+    <div class="content-wrapper">
+        <h2 class="title">What say <span class="highlight">Pro People</span></h2>
+        <div class="slider-wrapper">
+        <div class="slider-container">
+            <div class="testimonial" id="slide-1">
+                <div class="user-info">
+                    <img src="/images/user1.png" alt="Antonio Benz" class="avatar">
+                    <div class="text">
+                        <h3>Antonio Benz</h3>
+                        <p class="job">Bike designer</p>
+                    </div>
+                </div>
+                <p class="quote-text">A bicycle, also called a pedal cycle, bike or cycle, is a human-powered or motor-powered assisted, pedal-driven, single-track vehicle , having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.</p>
+            </div>
+
+            <div class="testimonial" id="slide-2">
+                <div class="user-info">
+                    <img src="/images/user2.png" alt="Maha" class="avatar">
+                    <div class="text">
+                        <h3>Ahmed Syam</h3>
+                        <p class="job">Bike Rider</p>
+                    </div>
+                </div>
+                <p class="quote-text">A bicycle, also called a pedal cycle, bike or cycle, is a human-powered or motor-powered assisted, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.</p>
+            </div>
+        </div>
+        </div>
+        <div class="controls-area">
+    <div class="quote-wrapper">
+    
+    <svg class="polygon-bg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M30 20 L55 20 L45 50 L60 50 L50 80 L25 80 L35 50 L20 50 Z"
+              fill="#333"
+              opacity="0.15"/>
+    </svg>
+
+    <div class="orange-quote">
+        <span ><i class="fa-solid fa-quote-left"></i></span>
+    </div>
+
+</div>
+
+    <div class="nav-arrows-i">
+        <button class="prev" onclick="prevSlide()">&#x2190;</button>
+        <button class="next" onclick="nextSlide()">&#x2192;</button>
+    </div>
+</div>
+
+        
+    </div>
+
+    <div class="bike-footer">
+        <div class="orange-shape"></div>
+        <img src="/images/bicycle2.png" alt="Electric Bike" class="bike2-img">
+    </div>
+</section>
+<section class="bike-footer-section">
+    <div class="newsletter-container">
+        <h2 class="title">Get your own <span class="highlight"> Special Bike</span>
+    <div class="bg-text">
+        <div class="track">
+            <span>Get your own Special Bike Get your own Special Bike Get your own Special Bike Get your own Special Bike</span>
+            <span>Get your own Special Bike Get your own Special Bike Get your own Special Bike Get your own Special Bike</span>
+        </div>
+    </div>
+</h2>
+        <p>Subscribe to our newsletter to get new Bike Offers</p>
+        
+        <div class="input-group-i">
+            <input type="email" placeholder="Enter your email ...">
+            <button class="join-btn">
+                <i class="fa-solid fa-envelope"></i> JOIN NOW
+            </button>
+        </div>
+    </div>
+
+    <div class="contact-info-card">
+        <div class="info-item">
+            <h4>Pre-sale Questions</h4>
+            <p>help@xtrabicycle.com</p>
+        </div>
+        <div class="divider"></div>
+        <div class="info-item">
+            <h4>Call Us</h4>
+            <p>+1 800 2345 6789</p>
+        </div>
+        <div class="divider"></div>
+        <div class="info-item">
+            <h4>Our Location</h4>
+            <p>#2354, Beverly Hills, LA</p>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-col">
+            <h3>Office</h3>
+            <div class="orange-line"></div>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> <span>121 King Street, NewYork</span></li>
+                <li><i class="fas fa-phone-alt"></i> <span>+1 (800) 333 44 55</span></li>
+                <li><i class="fas fa-envelope"></i> <span>xtrabike@gmail.com</span></li>
+                <li><i class="fas fa-fax"></i> <span>+1 (800) 333 99 88</span></li>
+                <li><i class="fab fa-x-twitter"></i> <span>@xta_bikeshop</span></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h3>News</h3>
+            <div class="orange-line"></div>
+            <div class="news-item">
+                <div class="over-img" >
+                <img src="/images/new1.jpg" alt="news">
+                <div class="overlay-icon">
+   <a href="/xtra/blog.html"> <i class="fas fa-link" ></i></a>
+</div>
+                </div>
+                <div class="news-text">
+                    <p>Top 7 Must have Accessories for Everyone...</p>
+                    <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 24</small>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="over-img">
+                <img src="/images/new2.jpg" alt="news">
+                <div class="overlay-icon">
+   <a href="/xtra/blog.html"> <i class="fas fa-link"></i></a>
+</div>
+                </div>
+                <div class="news-text">
+                    <p>How to Choose the Perfect Bike for Your...</p>
+                    <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 18</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Shortcuts</h3>
+            <div class="orange-line"></div>
+            <div class="shortcuts-grid">
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> City Store</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> News</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Clients</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Consultation</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Maps</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Employees</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Teams</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Benefits</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Working Hours</h3>
+            <div class="orange-line"></div>
+            <p class="support-text">Our support available to help you 24 hours a day, seven days a week.</p>
+            <ul class="hours-list">
+                <li><span>Monday to Friday</span> <strong>8AM - 4PM</strong></li>
+                <li><span>Saturday</span> <strong>8AM - 1PM</strong></li>
+                <li><span>Sunday</span> <strong >Closed</strong></li>
+            </ul>
+        </div>
+        
+    </div>
+</footer>
+<footer class="footer2">
+    <p>Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+    <div class="icons-container">
+    <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+    <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+    <img src="https://img.icons8.com/color/48/amex.png" alt="American Express">
+    <img src="https://img.icons8.com/color/48/bitcoin.png" alt="Bitcoin">
+    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+</div>
+</footer>
+<div class="floating-buttons">
+    <button class="btn2 up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <button class="btn2 msg-btn">
+        <i class="fas fa-envelope"></i>
+    </button>
+</div>
+<div class="bottom-nav">
+    <a href="#" class="nav-item active">
+        <div class="icon"><i class="fas fa-house"></i></div>
+        <span>Home</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+        <div class="icon"><i class="fas fa-shop"></i></div>
+        <span>Shop</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <span>Call Us</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <span>Contact</span>
+    </a>
+</div>
+<div class="side-bar-fixed">
+    <div class="logo-icon">
+        <i class="fa-solid fa-bolt-lightning"></i> 
+    </div>
+    <ul class="nav-icons">
+        <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-file-arrow-down"></i></a></li>
+    </ul>
+</div>
+
+
+
+
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

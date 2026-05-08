@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product - Bike Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <div class="top-announcement-bar">
+   <div class="container-bar">
+     <div class="envato-logo">
+       <span class="leaf"><i class="fa-solid fa-leaf leaf-icon"></i></span> envato<span>market</span>
+     </div>
+     
+     <div class="promo-text">
+       Limited time offer, Buy XTRA WordPress theme only <span>$29</span>
+     </div>
+     
+     <div class="action-btn">
+       <a href="#" class="btn-green">Download XTRA Theme</a>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ <nav class="navbar">
+   
+   <div class="logo">
+     <i class="fas fa-bicycle"></i>
+     <span class="brand-name">XTRA</span>
+   </div>
+   
+   <ul class="nav-links">
+     <li class="active"><a href="index.html">Home</a></li>
+     <li class="dropdown-container">
+       <a href="about.html">About <i class="fas fa-chevron-down arrow-s"></i></a>
+       <ul class="dropdown-menu">
+         <li><a href="#">Submenu 1</a></li>
+         <li><a href="#">Dropdown menu</a></li>
+         <li><a href="#">Submenu 2</a></li>
+       </ul>
+     </li>
+     <li class="dropdown-container">
+       <a href="#" class="dots">...</a>
+       <ul class="dropdown-menu">
+          <li><a href="services.html">Services</a></li>
+       <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+       </ul>
+     </li>
+   </ul>
+   
+   <div class="nav-actions">
+     <button class="help-btn">
+       <i class="fas fa-bicycle"></i> Help & Service
+     </button>
+     <div class="icon-wrapper">
+       <i class="far fa-heart" onclick="openWishlist()"></i>
+       <span class="badge">0</span>
+     </div>
+     <div class="icon-wrapper">
+       <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+       <span class="badge">0</span>
+       <div class="cart-dropdown" id="cartDropdown" >
+         <div class="cart-content" id="cartContent">
+           <i class="fas fa-shopping-cart empty-icon"></i>
+           <p>Your cart is empty — start shopping</p>
+         </div>
+         <div id="cartFooter" style="display:none;"></div>
+       </div>
+     </div>
+   </div>
+   <div class="menu-toggle" id="menuToggle">
+     <i class="fas fa-bars"></i>
+   </div>
+ </nav>
+ 
+ <div class="side-menu" id="sideMenu">
+   <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div>
+   <div class="menu-content">
+     <ul class="mobile-nav-links">
+       <li class="active"><a href="index.html">Home</a></li>
+       <li class="has-children" id="mobileAbout">
+         <a href="about.html">
+           About <i class="fas fa-chevron-down arrow"></i>
+         </a>
+         <ul class="mobile-submenu">
+           <li><a href="#">Submenu 1</a></li>
+           <li class="has-inner-children">
+             <a href="javascript:void(0)">
+               Dropdown menu <i class="fas fa-chevron-down arrow-s"></i>
+             </a>
+           </li>
+           <li><a href="#">Submenu 2</a></li>
+         </ul>
+       </li>
+       
+       <li><a href="services.html">Services</a></li>
+       <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="buy-xtra"><a href="#">Buy XTRA Theme</a></li>
+            
+     </ul>
+     <div class="menu-footer">
+       <div class="social-icons">
+         <a href="#" data-title="Facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+         <a href="#" data-title="Twitter" class="twitter"><i class="fab fa-x-twitter"></i></a>
+         <a href="#" data-title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+       </div>
+       <p>© Copyright 2026</p>
+     </div>
+     
+   </div>
+ </div>
+ <div class="top-sec center">
+   <i class="fas fa-house"></i>
+   <i class="fas fa-bicycle i2"></i>
+   <p>Product</p>
+   <i class="fas fa-bicycle i2"></i>
+   <p id="detail-brand" >Premium Sets</p>
+ </div>
+ <section class="product-section" id="product-section">
+    <div class="container-product">
+      <aside class="mov-y">
+      <div class="product-image">
+  <img src="/images/bicycle.png" alt="Bicycle" id="detail-img">
+</div>
+      </aside>
+      <div class="product-content">
+          <div class="tit">
+    <h1 class="title" id="detail-title" >Discover 2 Step-Thru</h1>
+    <span style="color: #444;" ><i class="fas fa-chevron-left" id="prevBtn" style="margin-right: 10px;"></i><i class="fas fa-th-large" id="gridBtn"></i><i class="fas fa-chevron-right" id="nextBtn" style="margin-left: 10px;"></i></span>
+          </div>
+    <div class="rating">
+        <span class="score">4.7</span>
+        <span class="stars"><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i><i class="fa-solid fa-star" style="color: gold;"></i></span>
+        <span class="count2">(3 Rating)</span>
+    </div>
+    
+    <div class="price-pro">
+        <span class="current-price"id="detail-price" >$768</span>
+    </div>
+
+    <p class="description">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    </p>
+
+    <div class="action-row">
+        <div class="quantity-wrapper">
+            <button>-</button>
+            <span class="qty-num">1</span>
+            <button>+</button>
+        </div>
+       <button class="add-to-cart-vertical">
+  <span class="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </span>
+  
+  <span class="cart-text">
+    <span>A</span>
+    <span>d</span>
+    <span>d</span>
+    <span>t</span>
+    <span>o</span>
+    <span>c</span>
+    <span>a</span>
+    <span>r</span>
+    <span>t</span>
+  </span>
+</button>
+
+        <button class="icon-action-btn"><i class="fa-regular fa-heart"></i></button>
+        <div id="wishlist-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeWishlistModal()">&times;</button>
+        <div class="success-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 id="modal-product-name">Product Name</h2>
+        <p>Product has been added to your list.</p>
+        <a href="wishlist.html" class="view-wishlist-btn">
+            View wishlist page 
+            <span class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></span>
+        </a>
+    </div>
+</div>
+
+        <button class="icon-action-btn"><i class="fa-solid fa-retweet"></i></button>
+    </div>
+
+    <button class="purchase-btn">
+        <span class="link-icon"><i class="fa-solid fa-link"></i></span> Purchase from ThemeForest
+    </button>
+    
+    <div class="cart-stats">
+        <i class="fa-solid fa-cart-shopping"></i> 2 people have added this product to their cart
+    </div>
+
+    <div class="specialist-box">
+        <div class="icon-phone"><i class="fa-solid fa-phone"></i></div>
+        <div class="specialist-text">
+            <p>Need help choosing the right product?</p>
+            <strong>Speak to product specialist at 1-312-800-0000</strong>
+        </div>
+    </div>
+
+    <div class="product-meta">
+    <img src="/images/brand-xtra-1.jpg" alt="brand" />
+      <div class="meta-items">
+        <div class="meta-item"><span>Brand</span> <strong>XTRA</strong></div>
+        <div class="meta-item"><span>SKU</span> <strong>SKU_203</strong></div>
+        <div class="meta-item"><span>Status</span> <strong class="in-stock">110 in stock <i class="fa-solid fa-check" style="color: green;"></i></strong></div>
+        <div class="meta-item"><span>Tags</span> <strong>Bicycle, Bike, New, Road</strong></div>
+      </div>
+    </div>
+<hr />
+    <div class="payments">
+      <p>Secure payments:</p>
+      <div>
+        <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+<img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+<img src="https://img.icons8.com/color/48/amex.png" alt="American Express">
+<img src="https://img.icons8.com/color/48/bitcoin.png" alt="Bitcoin">
+<img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      </div>
+    </div>
+    <div class="share-container">
+    <div class="share-header"><span>Share it</span></div>
+    <div class="share-body">
+        <div class="social-icons">
+            <a href="#" data-title="Facebook" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" data-title="Twitter" class="twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="#" data-title="Pinterest" class="pinterest">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+
+            <a href="#" data-title="WhatsApp" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="#" data-title="Email" class="email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+    </div>
+</section>
+<section class="tabs-container">
+    <div class="tabs-menu">
+        <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+        <button class="tab-btn" onclick="openTab(event, 'info')">Information</button>
+        <button class="tab-btn" onclick="openTab(event, 'reviews')">Reviews 3</button>
+        <button class="tab-btn" onclick="openTab(event, 'size')">Size Guide</button>
+        <button class="tab-btn" onclick="openTab(event, 'faq')">FAQ</button>
+        <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping & Returns</button>
+    </div>
+
+    <div id="description" class="tab-content active">
+        <h2>Your Personal Assistant</h2>
+        <p>Welcome to the next generation of assistance with our Future Helper Robot. Engineered with cutting-edge artificial intelligence, this robotic companion serves as your personal assistant, seamlessly integrating into your daily routine to enhance productivity and convenience. Whether you need help with scheduling, organization, or simply a friendly chat, our Future Helper Robot is always at your service, learning from your preferences and adapting to your needs over time.</p>
+        <h2>Effortless Household Management</h2>
+        <p>Say goodbye to mundane chores and hello to newfound freedom with our Future Helper Robot. Equipped with nimble mobility and dexterous manipulators, it effortlessly navigates your home, tackling household tasks with efficiency and precision. From cleaning and tidying to managing smart home devices and even assisting with meal preparation, this robot revolutionizes the way you maintain your living space, leaving you with more time to focus on what truly matters.</p>
+        <h2>Entertainment Hub of Tomorrow</h2>
+        <p>But our Future Helper Robot is more than just a practical assistant—it’s also a gateway to endless entertainment and enrichment. With its intuitive interface and seamless connectivity, it transforms into your personal entertainment hub, streaming music, news, and immersive virtual reality experiences at your command. Whether you’re unwinding after a long day or seeking inspiration for your next adventure, this robot brings entertainment to life in ways you never thought possible.</p>
+        <br />
+        <p>Experience the future today with our Future Helper Robot. Embrace a world where technology works for you, empowering you to achieve more, live better, and unlock the full potential of tomorrow.</p>
+    </div>
+
+    <div id="info" class="tab-content">
+    <h2 class="title">Additional information</h2>
+    <hr>
+    <table class="info-table">
+        <tr>
+            <th>Weight</th>
+            <td id="detail-weight">19 lbs</td>
+        </tr>
+        <tr>
+            <th>Dimensions</th>
+            <td>62 × 45 × 34 in</td>
+        </tr>
+        <tr>
+            <th>Product year</th>
+            <td id="detail-year" >2024</td>
+        </tr>
+        <tr>
+            <th>Product manual</th>
+            <td>Included in the package</td>
+        </tr>
+        <tr>
+            <th>Refundable</th>
+            <td>Up to 14 days</td>
+        </tr>
+    </table>
+</div>
+
+
+    <div id="reviews" class="tab-content">
+    <div class="reviews-container">
+        
+        <div class="reviews-left">
+            <div class="rating-summary">
+                <div class="average-score">
+                    <h1>4.67</h1>
+                    <div class="stars"><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star-half-stroke" style="color:#f1c40f;"></i></div>
+                    <p>(3 Rating)</p>
+                </div>
+                <div class="score-bars">
+                    <div class="bar-item"><span>5★</span> <div class="bar"><div class="fill" style="width: 67%"></div></div> <span>67%</span></div>
+                    <div class="bar-item"><span>4★</span> <div class="bar"><div class="fill" style="width: 33%"></div></div> <span>33%</span></div>
+                    <div class="bar-item"><span>3★</span> <div class="bar"></div> <span>0%</span></div>
+                    <div class="bar-item"><span>2★</span> <div class="bar"></div> <span>0%</span></div>
+                    <div class="bar-item"><span>1★</span> <div class="bar"></div> <span>0%</span></div>
+                </div>
+            </div>
+
+            <form class="review-form">
+                <h3>Add a review</h3>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <label>Your rating *</label>
+                <div class="stars-input"><i class="fa-regular fa-star" style="color:#f1c40f;"></i> <i class="fa-regular fa-star" style="color:#f1c40f;"></i> <i class="fa-regular fa-star" style="color:#f1c40f;"></i> <i class="fa-regular fa-star" style="color:#f1c40f;"></i> <i class="fa-regular fa-star" style="color:#f1c40f;"></i></div>
+                
+                <label>Your review *</label>
+                <textarea rows="5"></textarea>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Name *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Email *</label>
+                        <input type="email">
+                    </div>
+                    <div class="input-group">
+                        <label>5 + 1 = ?</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save my name, email, and website in this browser for the next time I comment.</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="reviews-right">
+            <h3>3 reviews for Folding Electric Bike</h3>
+            
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="/images/user1.png" alt="user" class="avatar-pro">
+                    <div class="res">
+                    
+                    <div>
+                        <h4>Emily</h4>
+                        <span>29 November 2025</span>
+                    </div>
+                    <div class="user-stars"><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i></div>
+                    </div>
+                </div>
+                <p>This product exceeded my expectations. The packaging was professional and delivery was fast. I will buy again for sure.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="/images/user1.png" alt="user" class="avatar-pro">
+                    <div class="res">
+                    <div>
+                        <h4>Laura</h4>
+                        <span>29 November 2025</span>
+                    </div>
+                    <div class="user-stars"><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-regular fa-star" style="color:#555;"></i></div>
+                    </div>
+                </div>
+                <p>Beautiful design and solid build quality. Could be slightly more premium but still great. Very satisfied overall.</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="/images/user1.png" alt="user" class="avatar-pro">
+                    <div class="res">
+                    <div>
+                        <h4>Emily</h4>
+                        <span>29 November 2025</span>
+                    </div>
+                    <div class="user-stars"><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i><i class="fa-solid fa-star" style="color:#f1c40f;"></i></div>
+                    </div>
+                </div>
+                <p>This product exceeded my expectations. The packaging was professional and delivery was fast. I will buy again for sure.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+ <div id="size" class="tab-content">
+    <div class="table-container">
+        <table class="size-table">
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>USA</th>
+                    <th>Europe</th>
+                    <th>Others</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="font-bold">XS</td>
+                    <td>28-30</td>
+                    <td>27-29</td>
+                    <td>34-36</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">S</td>
+                    <td>30-32</td>
+                    <td>29-31</td>
+                    <td>36-38</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">M</td>
+                    <td>32-33</td>
+                    <td>31-33</td>
+                    <td>38-40</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">L</td>
+                    <td>33-34</td>
+                    <td>33-36</td>
+                    <td>40-44</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">XL</td>
+                    <td>34-38</td>
+                    <td>36-40</td>
+                    <td>44-48</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">XXL</td>
+                    <td>38-48</td>
+                    <td>40-44</td>
+                    <td>48-50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+ <div id="faq" class="tab-content">
+    <div class="faq-container">
+      <h2>FAQ</h2>
+        <div class="faq-image2">
+            <img src="/images/faq.jpg" alt="FAQ Image">
+        </div>
+
+        <div class="faq-questions2">
+            
+            <div class="faq-item2">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept various payment methods, including credit/debit cards, PayPal, and bank transfers for your convenience.</p>
+            </div>
+
+            <div class="faq-item2">
+                <h3>Do you offer international shipping?</h3>
+                <p>Yes, we offer international shipping to many countries. Please check our shipping information page for details on available destinations and shipping rates.</p>
+            </div>
+
+            <div class="faq-item2">
+                <h3>How can I track my order?</h3>
+                <p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track your package's delivery status on our website or through the courier's tracking portal.</p>
+            </div>
+
+            <div class="faq-item2">
+                <h3>What is your return policy?</h3>
+                <p>We offer a hassle-free return policy. If you're not satisfied with your purchase for any reason, you can return it within 30 days for a full refund or exchange. Please refer to our returns page for detailed instructions.</p>
+            </div>
+
+            <div class="faq-item2">
+                <h3>Are your products covered by a warranty?</h3>
+                <p>Yes, most of our products come with a manufacturer's warranty against defects in materials and workmanship. The duration and terms of the warranty vary by product, so please check the product description or contact our customer support team for specific details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shipping" class="tab-content">
+    <div class="shipping-container">
+        <section class="shipping-info">
+            <h2>Shipping & Delivery</h2>
+            <p>
+                All estimated shipping times are in addition to fulfillment times. We offer a next working day delivery for 
+                orders placed before 6:30 p.m. Monday to Friday. Orders placed after this will be delivered within two 
+                working days. This excludes Saturday, Sunday and holidays. Appointed is not responsible for any 
+                customs/duties related to international orders. We are unable to calculate charges prior to your order 
+                being delivered, and recommend checking with your local customs office for more information. Shipping 
+                fees will not be refunded if you refuse these charges.
+            </p>
+
+            <div class="shipping-grid">
+                <ul class="shipping-list">
+                    <li>Free destination delivery above $100</li>
+                    <li>Europe 1 – 3 days Free</li>
+                    <li>United States 4 – 6 days Free</li>
+                    <li>Asia 3 – 6 days Free</li>
+                    <li>Africa 5 – 7 days Free</li>
+                    <li>Australia 3 – 5 days Free</li>
+                </ul>
+                <div class="shipping-image">
+                    <img src="/images/shipping.png" alt="Shipping Illustration">
+                </div>
+            </div>
+        </section>
+
+        <section class="returns-info">
+            <h2>Returns & Refunds</h2>
+            <p>
+                We have a 14-day return policy, which means you have 14 days after receiving your item to request a 
+                return. To be eligible for a return, your item must be in the same condition that you received it, unused, 
+                and in its original packaging. You'll also need the order confirmation, order number, or proof of purchase. 
+                We will notify you once we've received and inspected your return, and let you know if the refund 
+                was approved or not. If approved, you'll be automatically refunded on your original payment method. 
+                Please remember it can take some time for your bank or credit card company to process and post the 
+                refund too.
+            </p>
+        </section>
+    </div>
+</div>
+
+
+</section>
+<section class="related">
+       <div class="related-header" style="color: #fff;">
+       <h2>Related products</h2>
+   </div>
+   <div id="related-container" class="products-grid"></div>
+</section>
+<section class="recently">
+       <div class="recently-header" style="color: #fff;">
+       <h2>Recently viewed products</h2>
+   </div>
+   <div id="recently-container" class="products-grid"></div>
+</section>
+
+  <section class="bike-footer-section">
+    <div class="contact-info-card">
+      <div class="info-item">
+        <h4>Pre-sale Questions</h4>
+        <p>help@xtrabicycle.com</p>
+      </div>
+      <div class="divider"></div>
+      <div class="info-item">
+        <h4>Call Us</h4>
+        <p>+1 800 2345 6789</p>
+      </div>
+      <div class="divider"></div>
+      <div class="info-item">
+        <h4>Our Location</h4>
+        <p>#2354, Beverly Hills, LA</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-col">
+        <h3>Office</h3>
+        <div class="orange-line"></div>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> <span>121 King Street, NewYork</span></li>
+          <li><i class="fas fa-phone-alt"></i> <span>+1 (800) 333 44 55</span></li>
+          <li><i class="fas fa-envelope"></i> <span>xtrabike@gmail.com</span></li>
+          <li><i class="fas fa-fax"></i> <span>+1 (800) 333 99 88</span></li>
+          <li><i class="fab fa-x-twitter"></i> <span>@xta_bikeshop</span></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>News</h3>
+        <div class="orange-line"></div>
+        <div class="news-item">
+          <div class="over-img">
+            <img src="/images/new1.jpg" alt="news">
+            <div class="overlay-icon">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <div class="news-text">
+            <p>Top 7 Must have Accessories for Everyone...</p>
+            <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 24</small>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="over-img">
+            <img src="/images/new2.jpg" alt="news">
+            <div class="overlay-icon">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <div class="news-text">
+            <p>How to Choose the Perfect Bike for Your...</p>
+            <small><i class="far fa-clock"></i> 10 June 2024 <i class="far fa-eye"></i> 18</small>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Shortcuts</h3>
+        <div class="orange-line"></div>
+        <div class="shortcuts-grid">
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> City Store</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> News</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Clients</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Consultation</a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Maps</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Employees</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Teams</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Benefits</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Working Hours</h3>
+        <div class="orange-line"></div>
+        <p class="support-text">Our support available to help you 24 hours a day, seven days a week.</p>
+        <ul class="hours-list">
+          <li><span>Monday to Friday</span> <strong>8AM - 4PM</strong></li>
+          <li><span>Saturday</span> <strong>8AM - 1PM</strong></li>
+          <li><span>Sunday</span> <strong>Closed</strong></li>
+        </ul>
+      </div>
+      
+    </div>
+  </footer>
+  <footer class="footer2">
+    <p>Copyright © 2026 Xtra Theme. All Rights Reserved.</p>
+    <div class="icons-container">
+      <img src="https://img.icons8.com/color/48/mastercard.png" alt="MasterCard">
+      <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+      <img src="https://img.icons8.com/color/48/amex.png" alt="American Express">
+      <img src="https://img.icons8.com/color/48/bitcoin.png" alt="Bitcoin">
+      <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+    </div>
+  </footer>
+  <div class="floating-buttons">
+    <button class="btn2 up-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <button class="btn2 msg-btn">
+      <i class="fas fa-envelope"></i>
+    </button>
+  </div>
+  <div class="bottom-nav">
+    <a href="#" class="nav-item ">
+      <div class="icon"><i class="fas fa-house"></i></div>
+      <span>Home</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <div class="icon"><i class="fas fa-shop"></i></div>
+      <span>Shop</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <div class="icon"><i class="fas fa-phone"></i></div>
+      <span>Call Us</span>
+    </a>
+    
+    <a href="#" class="nav-item">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <span>Contact</span>
+    </a>
+  </div>
+  
+  
+  
+  
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
