@@ -579,6 +579,20 @@ function setupNavigation() {
     }
 }
 window.addEventListener('load', setupNavigation);
+function navigateToPost(direction) {
+    const btnId = direction === 'prev' ? 'prev-post-btn' : 'next-post-btn';
+    const btn = document.getElementById(btnId);
+    const targetId = btn.dataset.id;
+
+    if (targetId) {
+        const targetPost = postsData.find(p => p.id === parseInt(targetId));
+
+        if (targetPost) {
+            localStorage.setItem('selectedPost', JSON.stringify(targetPost));
+            window.location.href = 'post-blog.html'; 
+        }
+    }
+}
  function setupProductNavigation() {
     const currentProduct = JSON.parse(localStorage.getItem('selectedProduct'));
     if (!currentProduct) return;
