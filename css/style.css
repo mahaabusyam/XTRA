@@ -4189,7 +4189,7 @@ cursor: pointer;
 /* القائمة الجانبية (Side Menu) */
 .side-menu {
     position: fixed; top: 0; right: -100%; width: 90%; height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('images/side-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('../images/side-bg.jpg') center/cover;
     transition: 0.4s ease;
     z-index: 1000;
     padding: 40px; 
