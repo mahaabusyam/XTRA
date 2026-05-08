@@ -1669,7 +1669,7 @@ opacity: 0.2;
 /*sec2 about*/
 .about-section {
     padding: 60px 10%;
-    background-image: linear-gradient(rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 0.8)), url('images/about-bg.jpg');
+    background-image: linear-gradient(rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 0.8)), url('../images/about-bg.jpg');
     background-size: cover;
 background-position: center;
 position: relative;
@@ -1690,7 +1690,7 @@ overflow: hidden;
     right: 10%;
     width: 30%;
     height: 100%;
-    background-image: url('images/about-bg.jpg');
+    background-image: url('../images/about-bg.jpg');
     clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
     background-size: cover;
     background-position: center;
