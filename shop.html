@@ -503,14 +503,21 @@
    </div>
  </footer>
  <div class="floating-buttons">
-   <button class="btn2 up-btn">
-     <i class="fas fa-arrow-up"></i>
-   </button>
-   
-   <button class="btn2 msg-btn">
-     <i class="fas fa-envelope"></i>
-   </button>
- </div>
+    
+    <div class="contact-form-popup" id="contactForm">
+        <input type="text" placeholder="Your Name (*)">
+        <input type="email" placeholder="Your Email (*)">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="send-btn">Send Message</button>
+    </div>
+    <button class="btn2 up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="btn2 msg-btn" id="msgBtn">
+        <i class="fas fa-envelope" id="msgIcon"></i>
+    </button>
+    
+</div>
  <div class="bottom-nav">
    <a href="#" class="nav-item ">
      <div class="icon"><i class="fas fa-house"></i></div>
