@@ -108,14 +108,6 @@ function prevSlideI() {
         });
     }
     
-    const msgBtn = document.querySelector(".msg-btn");
-    
-    if (msgBtn) {
-        msgBtn.addEventListener("click", () => {
-            window.open("https://wa.me/970599000000", "_blank");
-        });
-    }
-    
     const slidesAbout = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot2");
     const nextBtn = document.querySelector(".next");
