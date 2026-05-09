@@ -987,3 +987,19 @@ function openWishlist(){
 function openCart(){
     window.location.href="cart.html";
 }
+
+const msgBtn = document.getElementById('msgBtn');
+const msgIcon = document.getElementById('msgIcon');
+const contactForm = document.getElementById('contactForm');
+
+msgBtn.addEventListener('click', () => {
+    contactForm.classList.toggle('active');
+    if (contactForm.classList.contains('active')) {
+        msgIcon.classList.replace('fa-envelope', 'fa-times');
+        msgBtn.classList.add('active');
+    } else {
+        msgIcon.classList.replace('fa-times', 'fa-envelope');
+        msgBtn.classList.remove('active');
+    }
+});
+
