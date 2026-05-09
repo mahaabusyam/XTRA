@@ -1507,6 +1507,48 @@ opacity: 0.2;
     background: #fff;
     color: #ff6600;
 }
+.contact-form-popup {
+    display: none; 
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 300px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-form-popup.active {
+    display: flex;
+}
+
+.contact-form-popup input, .contact-form-popup textarea {
+    background: #262626;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.send-btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.msg-btn.active {
+    background: #fff;
+    color: #ff6600;
+}
+
 /*bottom nav*/
 .bottom-nav {
     position: fixed;
