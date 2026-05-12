@@ -2902,9 +2902,6 @@ background: #2a1a10;
     padding: 0 20px;
     margin: 40px 0;
 }
-.wishlist-empty .description{
-    translate: 430px 0px;
-}
 /*cart page*/
 .cart-container {
     width: 100%;
